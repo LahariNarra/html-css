@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Banking</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <center>
+            <h1>Welcome Online Banking Application</h1>
+        </center>
+        <div class="row" style="background-color:lavender;">
+            <a class="nav-link" href="Index.html">Home</a>
+            <a class="nav-link" href="Register.html">Create Account</a>
+            <a class="nav-link" href="Withdraw.html">Withdraw</a>
+            <a class="nav-link" href="Deposit.html">Deposit</a>
+            <a class="nav-link" href="Fund.html">Fund Transfer</a>
+            <a class="nav-link" href="Check.html">CheckBalance</a>
+            <a class="nav-link" href="Account.html">Account Details</a>
+        </div>
+        <center>
+            <h2>New User Registration</h2>
+        </center>
+        <form >
+            <div class="form-group">
+                <label for="User">Name:</label>
+                <input type="usr" class="form-control" id="User" placeholder="Enter name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="number">Contact No:</label>
+                <input type="number" class="form-control" id="User" placeholder="Enter number" name="Number" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" class="form-control" id="date" placeholder="Enter date of Birth" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="User">Address:</label>
+                <input type="text" class="form-control" id="address" placeholder="Enter address" name="address"required>
+            </div>
+            <div class="form-group">
+                <label for="User">City:</label>
+                <input type="text" class="form-control" id="city" placeholder="Enter city" name="city"required>
+            </div>
+            <div class="form-group">
+                <label for="User">State:</label>
+                <input type="text" class="form-control" id="State" placeholder="Enter state" name="state"required>
+            </div>
+            <div class="form-group">
+                <label for="User">Postal:</label>
+                <input type="text" class="form-control" id="Postal" placeholder="Enter address" name="Postal" required>
+            </div>
+            <div class="form-group">
+                <label for="User">Gender:</label><br>
+                <input type="radio" name="gender" value="male" checked required> Male<br>
+                <input type="radio" name="gender" value="female" required> Female<br>
+                <input type="radio" name="gender" value="other" required> Other<br>
+            </div>
+            <div class="form-group">
+                <label for="User">Account Type:</label><br>
+                <input list="Account" name="Account" required>
+                <datalist id="Account">
+                    <option value="Current">
+                    <option value="Savings">
+                </datalist>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
